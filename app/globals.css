@@ -74,3 +74,10 @@
       @apply bg-background text-foreground;
     }
   }
+
+  .fondo{
+    background-image:url("https://imagenes.muyinteresante.com/files/article_social_75/uploads/2022/12/27/63aad6ba67333.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
