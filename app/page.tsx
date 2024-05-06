@@ -1,6 +1,7 @@
 import GiftList from "@/components/ui/Gift";
 
 export default function Home() {
+
   return (
     <main>
         <section className= 'flex items-center justify-center h-screen flex-col fondo '> 

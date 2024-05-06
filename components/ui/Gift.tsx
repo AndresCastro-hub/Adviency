@@ -1,21 +1,18 @@
 "use client"
 import { Button } from "@/components/ui/button"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import ListGift from "./ListGift"
 import AddGift from "./AddGift"
-
-interface Gift  {
-    id: string,
-    value: string
-}
+import { Gift } from "../interfaces/types"
 
 const GiftList = () => {
     const [gift, setGift] = useState<Gift[]>([]);
     const habilitarDelete = gift.length > 0;
 
+    //Falta aplicar localeStorage
+
     return (
         <>
-
             <AddGift gift={gift} setGift={setGift}/>
                    
             <ListGift  gift={gift} setGift={setGift} />
